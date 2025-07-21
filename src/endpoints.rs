@@ -7,12 +7,14 @@ use crate::NotionClientError;
 
 use self::{
     blocks::BlocksEndpoint, comments::CommentsEndpoint, databases::DatabasesEndpoint,
-    pages::PagesEndpoint, search::SearchEndpoint, users::UsersEndpoint,
+    file_uploads::FileUploadsEndpoint, pages::PagesEndpoint, search::SearchEndpoint,
+    users::UsersEndpoint,
 };
 
 pub mod blocks;
 pub mod comments;
 pub mod databases;
+pub mod file_uploads;
 pub mod pages;
 pub mod search;
 pub mod users;
@@ -25,6 +27,7 @@ pub struct Client {
     pub blocks: BlocksEndpoint,
     pub comments: CommentsEndpoint,
     pub databases: DatabasesEndpoint,
+    pub file_uploads: FileUploadsEndpoint,
     pub pages: PagesEndpoint,
     pub search: SearchEndpoint,
     pub users: UsersEndpoint,
@@ -63,6 +66,9 @@ impl Client {
                 client: client.clone(),
             },
             databases: DatabasesEndpoint {
+                client: client.clone(),
+            },
+            file_uploads: FileUploadsEndpoint {
                 client: client.clone(),
             },
             pages: PagesEndpoint {

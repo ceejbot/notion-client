@@ -29,4 +29,7 @@ pub enum NotionClientError {
 
     #[error("Invalid header {}", source)]
     InvalidHeader { source: InvalidHeaderValue },
+
+    #[error("I/O error: {}", source)]
+    IoError { source: std::io::Error },
 }

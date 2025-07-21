@@ -10,7 +10,7 @@ Supports (almost) all endpoints — everything except authentication, for now!
 
 ## Features
 
-* ✅ Supports **databases**, **pages**, **blocks**, **users**, **comments**, and **search** endpoints
+* ✅ Supports **databases**, **pages**, **blocks**, **users**, **comments**, **search**, and **file uploads** endpoints
 * 🔒 Thread-safe client
 * 🧰 Builder pattern support
 * 📝 Rich set of examples
@@ -74,6 +74,7 @@ async fn main() {
 * [x] Support users endpoint
 * [x] Support comments endpoint
 * [x] Support search endpoint
+* [x] Support file uploads endpoint (with streaming for large files)
 * [ ] Support authentication endpoint
 * [x] Add tests to blocks endpoint
 * [x] Add tests to pages endpoint
@@ -81,6 +82,7 @@ async fn main() {
 * [x] Add tests to users endpoint
 * [x] Add tests to comments endpoint
 * [x] Add tests to search endpoint
+* [x] Add tests to file uploads endpoint
 * [x] Support builder pattern
 
 Feel free to suggest new features or improvements! 🙌

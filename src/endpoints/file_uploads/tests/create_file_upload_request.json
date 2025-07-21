@@ -1,0 +1,6 @@
+{
+  "filename": "example.jpg",
+  "content_type": "image/jpeg",
+  "content_length": 1024,
+  "mode": "single_part"
+}
